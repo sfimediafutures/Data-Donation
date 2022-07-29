@@ -1,0 +1,129 @@
+project_title: "Datadonasjon"
+contact_us: "Office@mediafutures.no"
+static_pages:
+  home:
+    active: True
+    name: "Om MediaFutures"
+    link: "https://mediafutures.no/about/"
+    blocks:
+      - type: jumbotron
+        title: "Enkel og sikker datadonasjon"
+        id: top
+        image: "/static/MCBergen.jpg"
+        lines:
+          - "En enkel metode for \u00E5 donere data til medieforskning"
+          - "JSON-formaterte GDPR pakker doneres"
+          - "Pakkene brukes s\u00E5 til forskning mot en ansvarlig fremtid innen medieproduksjon"
+        buttons:
+          - name: "Om prosjektet"
+            label: "btn-primary"
+            link: "#project"
+          - name: "Hvordan det virker"
+            label: "btn-success"
+            link: "/donate"
+
+      - type: "two_block_row"
+        id: project
+        image: "/static/logoMF.png"
+        image_pos: left
+        title: "MediaFutures i samarbeid med det nederlandske OSD2F rammeverket"
+        lines:
+          - "De digitale fotavtrykkene brukere legger fra seg i varierende nettbaserte platformer kan tilby enorme muligheter for forskningen p\u00E5 menneskers nettoppf\u00F8rsel."
+          - "For brukeres sikkerhet er det ulovlig \u00E5 lete etter brukerm\u00F8nster uten samtykke, som har bydd p\u00E5 store utfordringer for h\u00F8sting av forskningsmateriale."
+          - "Under GDPR lovverket, skal enhver EU-borger <br> kunne eksportere sin lagrede data i maskinleselig format fra enhver digital plattform som lagrer den."
+          - "Dette nettstedet gj\u00F8r det mulig for medieforskere \u00E5 enkelt og trygt motta eksportert data via GDPR-pakkene som privatpersoner kan velge \u00E5 sjener\u00F8st donere."
+        buttons:
+          - name: "Om MediaFutures"
+            label: "btn-primary"
+            link: "https://mediafutures.no/about/"
+          - name: "Doner data"
+            label: "btn-success"
+            link: "/upload"
+
+      - type: two_block_row
+        id: team
+        title: "Allmennt tilgjengelig kildekode"
+        lines:
+          - "Prosjektet er basert p\u00E5 et rammeverk med \u00E5pen kildekode, utviklet ved Universitetet i Amsterdam."
+          - "Verkt\u00F8yet gj\u00F8r det mulig for samtykkende brukere \u00E5 enkelt og trygt donere sine digitale fotspor til forskning."
+        circles_row:
+          - title: "Universitetet i Bergen"
+            subtitle: "Verter prosjektet"
+            image: "/static/UiB.png"
+          - title: "University of Amsterdam"
+            subtitle: "Bygget rammeverket"
+            image: "/static/UniAmsterImage.jpg"
+        buttons:
+          - name: "Om rammeverket"
+            label: "btn-primary"
+            link: "https://osf.io/preprints/socarxiv/xjk6t/"
+          - name: "Kildekode"
+            label: "btn-success"
+            link: "https://github.com/uvacw/osd2f"
+
+  privacy:
+    active: True
+    name: "Hvordan hente ut GDPR pakker"
+    blocks:
+      - type: jumbotron
+        title: "Hvordan hentes GDPR dataen ut?"
+        id: top
+        lines:
+          - "Nettstedene som tilbyr nedlastbare GDPR pakker har laget egne brukerveiledere som hjelper deg å navigere til dataen din."
+          - "Under kan man finne vedlagte lenker til de større aktørene."
+          - "Alle aktørene som er nevnt under har ventetid for å få dataen sin, så da håper vi du husker oss når du mottar dataen din."
+        buttons:
+            - name: "Schibsted"
+              label: "btn-primary"
+              link: "https://aboutme.schibsted.com/p/spid.no/download/"
+            - name: "Twitter"
+              label: "btn-primary"
+              link: "https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive"
+        lines:
+          - "Om du allerede har mottatt din data, kan du donere den ved å trykke på knappen under."
+        buttons:
+          - name: "Doner data"
+            label: "btn-success"
+            link: "/upload"
+
+  donate:
+    active: False
+    name: Donation Page
+    blocks: []
+
+upload_page:
+  blocks: []
+  upload_box:
+    header: "Velg datapakken du vil donere:"
+    explanation:
+      - "Trykk p\u00E5 'choose file' for \u00E5 velge hvilken mappe du vil donere."
+      - "Alternativt kan du dra mappen direkte fra filutforskeren rett inn i denne stiplede boksen."
+      - "OBS: Mappen m\u00E5 v\u00E6re i .zip format"
+  thanks_text: "Tusen takk for din donasjon!"
+  processing_text: "Prosesserer filen din.."
+  empty_selection: "Filen din inneholder ingen relevant data. <br> Har du valgt riktig fil (.zip)?"
+  file_indicator_text: "Elementer i din donasjon: "
+  donate_button: "Fullf\u00F8r donasjon"
+  inspect_button: "Inspiser og rediger"
+  preview_component:
+    entries_in_file_text: "Elementer i filen: "
+    title: "Inspiser og rediger donasjonen din"
+    explanation:
+      - "P\u00E5 toppen kan du se filene i din donasjon."
+      - "I hver fil kan du s\u00F8ke etter innhold."
+      - "Innholdet kan slettes fra pakken ved \u00E5 trykke p\u00E5 'remove selection' i en rad."
+    remove_rows_button: "Slett valgte rader"
+    search_prompt: "s\u00F8k i fil"
+    search_box_placeholder: "s\u00F8k i filen"
+    previous_file_button: "Forrige fil"
+    next_file_button: "Neste fil"
+  consent_popup:
+    title: "Jeg vil donere dataen min..."
+    lead: "Samtykkeerkl\u00E6ring"
+    points:
+      - "Hvordan sikres data?"
+      - "Hva vil dataen brukes til?"
+      - "Hvor lenge lagres dataen?"
+    end_text: "Ved \u00E5 trykke under s\u00E5 gir du ditt samtykke til at dataen anvendes for medieforskning"
+    decline_button: "Jeg gir ikke mitt samtykke"
+    accept_button: "Jeg samtykker"
