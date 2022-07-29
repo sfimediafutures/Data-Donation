@@ -12,6 +12,8 @@ As such it supports Data Donation Packages of arbitrary format in JSON files (al
 Consult the [documentation](/docs) folders to read a combination of documentation from the creators of osd2f and MediaFutures, 
 which will hopefully give a comprehensive view as to where the project is now and where it should be going, as well as how to potentially get there. 
 
+The docs also contain instructions for local installation, needed for further development on the project. While the front-end of the project is written in norwegian, all code and documentation is written in english.
+
 ## Framework Credits:
 
 If you use this tool, please cite the paper:
